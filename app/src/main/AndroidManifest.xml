@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.gtlp.alwaysonvpn">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -7,10 +8,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_vpn_lock_24dp"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".OverviewActivity"
             android:label="@string/app_name"
@@ -28,6 +31,16 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="34f8fe1dee5160fe8f1397f945db7417a25e50be" />
+
+        <service
+            android:name=".AlwaysOnVpnService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

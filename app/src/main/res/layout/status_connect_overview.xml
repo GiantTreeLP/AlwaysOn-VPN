@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_disconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/circlebutton_radius"
+        android:height="@dimen/circlebutton_radius"
+        android:background="@drawable/circlebutton"
+        android:backgroundTint="#f4511e"
+        android:onClick="connectToVpn"
+        android:singleLine="false"
+        android:text="Connect to VPN"
+        android:textColor="@color/colorText"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/circlebutton_radius"
+        android:height="@dimen/circlebutton_radius"
+        android:background="@drawable/circlebutton"
+        android:backgroundTint="#00e676"
+        android:onClick="disconnectFromVpn"
+        android:singleLine="false"
+        android:text="Connected to VPN"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>
