@@ -1,0 +1,5 @@
+<resources>
+    <item name="ic_overview" type="drawable">@drawable/ic_overview</item>
+    <item name="ic_network_wifi" type="drawable">@drawable/ic_network_wifi</item>
+    <item name="ic_network_cellular" type="drawable">@drawable/ic_network_cellular</item>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AlwaysOn VPN</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_subtitle">Enable and forget!</string>
+</resources>
